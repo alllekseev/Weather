@@ -17,33 +17,38 @@ final class WeatherViewController: UIViewController {
     cityName: "Москва, Россия"
   )
 
-  private lazy var header = HeaderView()
+  private lazy var header = CurrentLocationView(location: location)
+  private let currentWeatherView = CurrentWeatherView()
+  private let additionalWeatherGroupView = AdditionalWeatherGroupView()
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     view.backgroundColor = .elementLight
 
-    header.configureView(location: location)
-
-    setupViews()
-    configureConstraints()
+    prepareUI()
   }
+}
+
+
+extension WeatherViewController: ConfigureView {
 
   func setupViews() {
     view.setupView(header)
+    view.setupView(currentWeatherView)
+    view.setupView(additionalWeatherGroupView)
   }
 
   func configureConstraints() {
     NSLayoutConstraint.activate([
       header.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 34),
-      header.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-      header.trailingAnchor.constraint(equalTo: view.trailingAnchor),
       header.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      header.heightAnchor.constraint(equalToConstant: 50),
+
+      currentWeatherView.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 50),
+      currentWeatherView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+
+      additionalWeatherGroupView.topAnchor.constraint(equalTo: currentWeatherView.bottomAnchor, constant: 44),
+      additionalWeatherGroupView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
     ])
   }
-
-
 }
-
