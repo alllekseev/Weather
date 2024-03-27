@@ -90,65 +90,22 @@ enum WeatherType: Int {
 
   var dayIcon: String {
     switch self.rawValue {
-    case 200...202: return ""
-    case 230...233: return ""
-    case 300...302: return ""
-    case 500, 501, 511, 520, 522, 900: return ""
-    case 502: return ""
-    case 521: return ""
-    case 600, 610, 621: return ""
-    case 601, 602, 622: return ""
-    case 611, 612: return ""
-    case 623: return ""
+    case 200...202: return "cloud.bolt.rain"
+    case 230...233: return "cloud.sun.bolt"
+    case 300...302: return "cloud.drizzle"
+    case 500, 501, 511, 520, 522, 900: return "cloud.rain"
+    case 502: return "cloud.heavyrain"
+    case 521: return "cloud.sun.rain"
+    case 600, 621: return "cloud.snow"
+    case 601, 602, 622: return "cloud.snow.fill"
+    case 610: return "cloud.sleet"
+    case 611, 612, 623: return "cloud.sleet"
     case 700, 711, 721, 731, 741, 751: return ""
-    case 800: return ""
-    case 801, 802: return ""
-    case 803: return ""
-    case 804: return ""
-    default: return ""
+    case 800: return "sun.max"
+    case 801, 802: return "cloud.sun"
+    case 803: return "cloud"
+    case 804: return "smoke"
+    default: return "cloud.rain"
     }
   }
 }
-
-
-
-/*
- 200  Thunderstorm with light rain
- 201  Thunderstorm with rain
- 202  Thunderstorm with heavy rain
- 230  Thunderstorm with light drizzle
- 231  Thunderstorm with drizzle
- 232  Thunderstorm with heavy drizzle
- 233  Thunderstorm with Hail
- 300  Light Drizzle
- 301  Drizzle
- 302  Heavy Drizzle
- 500  Light Rain
- 501  Moderate Rain
- 502  Heavy Rain
- 511  Freezing rain
- 520  Light shower rain
- 521  Shower rain
- 522  Heavy shower rain
- 600  Light snow
- 601  Snow
- 602  Heavy Snow
- 610  Mix snow/rain
- 611  Sleet
- 612  Heavy sleet
- 621  Snow shower
- 622  Heavy snow shower
- 623  Flurries
- 700  Mist
- 711  Smoke
- 721  Haze
- 731  Sand/dust
- 741  Fog
- 751  Freezing Fog
- 800  Clear sky
- 801  Few clouds
- 802  Scattered clouds
- 803  Broken clouds
- 804  Overcast clouds
- 900  Unknown Precipitation
- */
