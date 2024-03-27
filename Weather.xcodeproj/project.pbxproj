@@ -84,8 +84,6 @@
 				2A89E2B42BAAE70D00000214 /* Application */,
 				2A89E2B62BAAE71C00000214 /* Assets */,
 				2ABAC2732BB05E930006C935 /* Bootstrap */,
-				2A89E2B52BAAE71400000214 /* Models */,
-				2A89E2B92BAAEC7700000214 /* Networking */,
 				2ABAC2742BB05E9F0006C935 /* SupportingFiles */,
 			);
 			path = Weather;
@@ -94,10 +92,12 @@
 		2A89E2B42BAAE70D00000214 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				2AAD58F72BB33FF9005EF07E /* Protocols */,
-				2ABAC27A2BB0618A0006C935 /* Extensions */,
-				2ABAC2752BB05F080006C935 /* UI */,
 				2A89E2A42BAAE70500000214 /* WeatherViewController.swift */,
+				2ABAC27A2BB0618A0006C935 /* Extensions */,
+				2A89E2B52BAAE71400000214 /* Models */,
+				2A89E2B92BAAEC7700000214 /* Networking */,
+				2AAD58F72BB33FF9005EF07E /* Protocols */,
+				2ABAC2752BB05F080006C935 /* UI */,
 			);
 			path = Application;
 			sourceTree = "<group>";
