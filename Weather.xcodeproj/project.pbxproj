@@ -37,7 +37,6 @@
 		2A89E2AE2BAAE70600000214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A89E2B72BAAE78300000214 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2A89E2BE2BAB185900000214 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		2AAD58F62BB2B880005EF07E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2AAD58FA2BB34016005EF07E /* ConfigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureView.swift; sourceTree = "<group>"; };
 		2ABAC2712BB05E200006C935 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		2ABAC2762BB05FBF0006C935 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -88,7 +87,6 @@
 				2A89E2B52BAAE71400000214 /* Models */,
 				2A89E2B92BAAEC7700000214 /* Networking */,
 				2ABAC2742BB05E9F0006C935 /* SupportingFiles */,
-				2AAD58F62BB2B880005EF07E /* MyPlayground.playground */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
