@@ -25,6 +25,7 @@ protocol APIRequest {
 extension APIRequest {
   var host: String { "locahost" }
   var port: Int { 8080 }
+  var apiKey: String { ProcessInfo.processInfo.environment["API_KEY"] ?? ""}
 }
 
 extension APIRequest {

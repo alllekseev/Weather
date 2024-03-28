@@ -15,9 +15,6 @@ struct Location {
   let cityName: String
 }
 
-// https://api.openweathermap.org/data/2.5/onecall?lat=19.0760&lon=72.8777&appid={yourAPIkey}"
-// https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=0c6e805a95e7c2453c2a38a5a9d2aed4
-
 /// city
 ///   - name: String
 ///   - sunrise: Date
@@ -31,21 +28,6 @@ struct Location {
 ///     - clouds
 ///     - wind
 ///     - pop (Probability of precipitation): Double (from 0 to 1) -> (from 0% to 100%)
-
-/*
- ?latitude=55.751244&longitude=37.618423&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset&timeformat=unixtime&timezone=Europe%2FMoscow&format=flatbuffers
-
- url: https://api.open-meteo.com/v1/forecast
- latitude
- longitude
- daily - weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset
- timeformat - unixtime
- timezone - Europe/Moscow
- current - temperature_2m,relative_humidity_2m,is_day,wind_speed_10m,wind_direction_10m
- */
-
-// https://api.weatherbit.io/v2.0/forecast/daily?city=Raleigh,NC&key=API_KEY
-// a4eb6907801b4f6095ae2fc7be04858d
 
 enum WeatherType: Int {
 
